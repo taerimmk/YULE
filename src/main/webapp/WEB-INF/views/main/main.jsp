@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
-<%@ include file="../common/header.jsp"%>
-<section id="content" class="container clearfix">
-
+<!DOCTYPE h2 PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ include file="../common/scripts.jsp"%>
+<!-- <section id="content" class="container clearfix"> -->
+	
 	<h2 class="slogan align-center">We are a group of experienced designers and developers.<br />
 	We set new standards in user experience &amp; make future happen.</h2>
-
+	
 	<section id="features-slider" class="ss-slider">
 	
 		<article class="slide">
@@ -357,6 +357,6 @@
 
 	</ul><!-- end .post-carousel -->
 	
-</section><!-- end #content -->
+<!-- </section> --><!-- end #content -->
 
-<%@ include file="../common/footer.jsp"%>
+<%-- <%@ include file="../common/footer.jsp"%> --%>

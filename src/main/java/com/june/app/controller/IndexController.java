@@ -1,29 +1,45 @@
 package com.june.app.controller;
 
-import java.util.List;
+import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
-import com.june.app.model.JobInfo;
 import com.june.app.service.JobService;
-import com.june.app.util.ExtJSReturn;
 
 @Controller
+@RequestMapping(value = "/Tiles")
 public class IndexController {
 
 	private final Log log = LogFactory.getLog(this.getClass());
 
 	@Autowired
 	private JobService jobService;
+	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	public ModelAndView welcome() {
+		return new ModelAndView("redirect:/main");
+	}
 	
+	
+	@RequestMapping(value = "/main")
+	public ModelAndView main() {
+		Map<String, Object> model = new HashMap<String, Object>();
+		model.put("employees",  "test");
+		return new ModelAndView("main", model);
+	}
+	
+	@RequestMapping(value = "/blog")
+	public ModelAndView blog() {
+		Map<String, Object> model = new HashMap<String, Object>();
+		model.put("employees",  "test");
+		return new ModelAndView("blog", model);
+	}
 	/*@RequestMapping(value = "/index")
 	@ResponseBody
 	public Map<String,? extends Object> requestIndex(@RequestParam String param, int page){

@@ -53,7 +53,7 @@
 
 <header id="header" class="container clearfix">
 
-	<a href="index.html" id="logo">
+	<a href="main" id="logo">
 		<img src="../resources/HTML/img/logo.png" alt="SmartStart">
 	</a>
 
@@ -61,7 +61,7 @@
 		
 		<ul>
 			<li class="current">
-				<a href="index.html" data-description="All starts here">Home</a>
+				<a href="main" data-description="All starts here">Home</a>
 				<ul>
 					<li><a href="logos-slider.html">Logos Slider</a></li>
 					<li><a href="photos-slider.html">Photos Slider</a></li>
@@ -89,7 +89,7 @@
 				</ul>
 			</li>
 			<li>
-				<a href="../blog/blogList.do" data-description="What we think">Blog</a>
+				<a href="blog" data-description="What we think">Blog</a>
 				<ul>
 					<li><a href="single-post.html">Single Post</a></li>
 				</ul>
